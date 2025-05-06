@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5 }}
-          className="absolute inset-0 bg-[url('./src/components/background.jpg')]" 
+          className="absolute inset-0 bg-[url('./components/background.jpg')]" 
           style={{ 
             backgroundPosition: 'center',
             backgroundSize: 'cover',
