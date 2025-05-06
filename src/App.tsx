@@ -17,7 +17,7 @@ function App() {
     // Find and update the favicon
     const favicon = document.querySelector("link[rel='icon']") as HTMLLinkElement;
     if (favicon) {
-      favicon.href = "https://cdn-icons-png.flaticon.com/512/2785/2785544.png";
+      favicon.href = "https://rescuefederation.com/wp-content/uploads/elementor/thumbs/cropped-Untitled-design-r3mn3nuaiqukd8ycb3jvlti2d9drwoa8z9wkw92c34.png";
     }
   }, []);
 
