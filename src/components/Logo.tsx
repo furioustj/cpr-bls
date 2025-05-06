@@ -25,7 +25,7 @@ const Logo: React.FC<LogoProps> = ({
       whileTap={{ scale: 0.95 }}
     >
       <img
-        src="/components/LogoRescue.png"
+        src="./LogoRescue.png"
         alt="Rescue Federation Logo"
         className={`w-full h-full object-contain ${variant === 'light' ? 'brightness-100' : 'brightness-90'}`}
       />
