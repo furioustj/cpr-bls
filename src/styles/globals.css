@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-6 py-3 rounded-md font-medium transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50;
+  }
+
+  .feature-card {
+    @apply bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+  }
+
+  .instructor-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2;
+  }
+
+  .testimonial-card {
+    @apply relative bg-white/10 backdrop-blur-sm rounded-lg p-8 md:p-12 transition-all duration-300 hover:bg-white/15;
+  }
+
+  .nav-link {
+    @apply relative overflow-hidden;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Pulse animation for heart icon */
+@keyframes pulse-red {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse {
+  animation: pulse-red 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient text animation */
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-red-400 to-red-500 bg-[length:200%_auto] animate-[gradient-text_3s_ease-in-out_infinite];
+}
