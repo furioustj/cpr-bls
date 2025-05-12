@@ -113,7 +113,7 @@ const CourseFeatures: React.FC = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <img 
-                  src="https://images.pexels.com/photos/3376790/pexels-photo-3376790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="https://cpr.heart.org/en/-/media/CPR-Images/Homepage/HandsperformingCPRinCPRclass.jpg?h=586&iar=0&mw=1910&w=940&sc_lang=en"
                   alt="CPR Training Session" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
