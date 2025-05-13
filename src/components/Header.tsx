@@ -38,7 +38,7 @@ const Header: React.FC = () => {
             <Logo 
               size="sm" 
               variant={isScrolled ? 'dark' : 'light'} 
-              className="animate-float"
+              className="animated-logo"
             />
             <div>
               <h1 className={`font-bold text-xl ${isScrolled ? 'text-gray-800' : 'text-white'}`}>

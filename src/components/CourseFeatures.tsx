@@ -65,7 +65,7 @@ const CourseFeatures: React.FC = () => {
             >
               <motion.div 
                 className="mb-4 bg-red-50 p-3 w-16 h-16 rounded-full flex items-center justify-center group-hover:bg-red-100 transition-colors duration-300"
-                whileHover={{ scale: 1.1, rotate: 360 }}
+                whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 {renderIcon(feature.icon)}
@@ -108,16 +108,17 @@ const CourseFeatures: React.FC = () => {
                 </motion.ul>
               </div>
               <motion.div 
-                className="relative h-64 lg:h-auto overflow-hidden rounded-lg"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <img 
-                  src="https://cpr.heart.org/en/-/media/CPR-Images/Homepage/HandsperformingCPRinCPRclass.jpg?h=586&iar=0&mw=1910&w=940&sc_lang=en"
-                  alt="CPR Training Session" 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-              </motion.div>
+  className="relative h-64 lg:h-[400px] overflow-hidden rounded-lg"
+  whileHover={{ scale: 1.05 }}
+  transition={{ type: "spring", stiffness: 300 }}
+>
+  <img 
+    src="https://cpr.heart.org/en/-/media/CPR-Images/Homepage/HandsperformingCPRinCPRclass.jpg?h=586&iar=0&mw=1910&w=940&sc_lang=en"
+    alt="CPR Training Session" 
+    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+  />
+</motion.div>
+
             </div>
           </div>
         </AnimatedSection>
