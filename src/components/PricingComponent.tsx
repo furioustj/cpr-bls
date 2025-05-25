@@ -104,7 +104,6 @@ const PricingComponent: React.FC = () => {
       <div className="absolute inset-0 w-full h-full z-0">
         <img
           src="public/images/doodle.jpg"
-          alt="Doodle Background"
           className="w-full h-full object-cover opacity-5"
         />
       </div>
