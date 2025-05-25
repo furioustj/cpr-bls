@@ -10,8 +10,10 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section id="faq" className="relative py-20 bg-white overflow-hidden">
+
+      {/* Content Layer */}
+      <div className="relative z-10 container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -19,10 +21,10 @@ const FAQ: React.FC = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto bg-white">
           {FAQ_ITEMS.map((item, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="mb-4 bg-white rounded-lg shadow-sm overflow-hidden"
             >
               <button
@@ -38,8 +40,8 @@ const FAQ: React.FC = () => {
                   <ChevronDown className="h-5 w-5 text-blue-600" />
                 )}
               </button>
-              
-              <div 
+
+              <div
                 id={`faq-answer-${index}`}
                 className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${
                   openIndex === index ? 'max-h-96 pb-6' : 'max-h-0'
@@ -55,8 +57,8 @@ const FAQ: React.FC = () => {
           <p className="text-gray-700 mb-4">
             Still have questions? We're here to help!
           </p>
-          <a 
-            href="#contact" 
+          <a
+            href="#contact"
             className="btn-secondary inline-flex items-center"
           >
             Contact Us

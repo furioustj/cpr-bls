@@ -8,7 +8,7 @@ import FAQ from './components/FAQ';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import './styles/globals.css';
-import PricingComponent from './components/PricingComponent';
+import PricingComponent  from './components/PricingComponent';
 
 function App() {
   useEffect(() => {
@@ -29,8 +29,8 @@ function App() {
       <CourseFeatures />
       <CourseOptions />
       <PricingComponent /> 
-      <Testimonials />
       <FAQ />
+      <Testimonials />
       <ContactSection />
       <Footer />
     </div>
